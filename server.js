@@ -1,5 +1,33 @@
 // require relavant express packages
 const express = require("express");
 const app = express();
-const expbs = require("express-handlebars");
+
 const path = require("path");
+
+const PORT = process.env.PORT || 8000;
+
+// use to serve static files/content from the "public" directory in the directory.
+app.use(express.static("public"));
+
+// use to parse application body as JSON filex
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+
+// set handlebars handlers
+const exphbs = require("express-handlebars");
+
+// path to layout folder
+app.engine(
+  "handlebars",
+  exphbs({
+    defaultLayout: "main",
+  })
+);
+
+app.set("view engine", "handlebars");
+
+// start server to allow it to begin listening to client requests.
+app.listen(PORT, function () {
+  // Log (server-side) when our server has started
+  console.log("Server listening on: http://localhost:" + PORT);
+});
