@@ -1,0 +1,24 @@
+{
+  "name": "burger",
+  "version": "1.0.0",
+  "description": "Using MySQL, Node, Express, Handlebars and a Homemade ORM to build a burger app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Carolenesw/Burger.git"
+  },
+  "author": "Carolene Wilson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Carolenesw/Burger/issues"
+  },
+  "homepage": "https://github.com/Carolenesw/Burger#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.1.0",
+    "mysql": "^2.18.1"
+  }
+}
