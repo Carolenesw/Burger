@@ -6,6 +6,8 @@ const path = require("path");
 
 const PORT = process.env.PORT || 8000;
 
+const routes = require("./controllers/burger_controller")
+
 // use to serve static files/content from the "public" directory in the directory.
 app.use(express.static("public"));
 
@@ -25,6 +27,9 @@ app.engine(
 );
 
 app.set("view engine", "handlebars");
+
+// add routes to connect to contoller module
+app.use(routes)
 
 // start server to allow it to begin listening to client requests.
 app.listen(PORT, function () {
