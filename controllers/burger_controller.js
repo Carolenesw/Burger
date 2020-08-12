@@ -15,12 +15,12 @@ router.get("/", function(req, res) {
   })
 })
 
+// create/add new burger for ajax call 
 router.post("/api/burgers", function(req, res) {
   console.log('Burger Name:', req.body);
-  burgers.insert([
-    "burger_name"], [req.body.burger_name],
+  burgers.insert(["burger_name"], [req.body.burger_name],
    function(result) {
-    // Send back the ID of the new burger
+    // Send back the id of the new burger
     res.json({ id: result.insertId, message: "success" });
   })
 })
