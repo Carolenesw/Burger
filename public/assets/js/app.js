@@ -1,7 +1,6 @@
 $(function () {
   // on click event capture new burger name
   $(".create-form").on("submit", function (event) {
-    // preventDefault on a submit event.
     event.preventDefault();
 
     let newBurger = {
@@ -26,7 +25,7 @@ $(function () {
       devoured: 1,
     };
 
-    // use PUT request to update burger status
+    // use PUT to update burger status
     $.ajax("/api/burgers/" + id, {
       type: "PUT",
       data: newState,

@@ -11,7 +11,6 @@ function selectTableValue(num) {
     return arr.toString();
   }
   
-  
 // create function to convert object key to SQL syntax
 function objectToSql(ob) {
    let arr = [];
@@ -63,7 +62,7 @@ let orm = {
         cb(result);
       });
     },
-    // An example of objColVals would be {name: panther, sleepy: true}
+   
     update: function(table, objColVals, condition, cb) {
       let queryString = "UPDATE " + table;
   

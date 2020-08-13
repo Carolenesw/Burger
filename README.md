@@ -63,7 +63,7 @@ https://github.com/Carolenesw/Burger
 
 ## Images
 
-<img src="asset/img.burger_page.png">
+<img src="public/assets/img/burger_page.png">
 
 
 

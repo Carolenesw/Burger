@@ -6,6 +6,7 @@ const path = require("path");
 
 const PORT = process.env.PORT || 8000;
 
+// required routes module to acces data
 const routes = require("./controllers/burger_controller")
 
 // use to serve static files/content from the "public" directory in the directory.
@@ -33,6 +34,6 @@ app.use(routes)
 
 // start server to allow it to begin listening to client requests.
 app.listen(PORT, function () {
-  // Log (server-side) when our server has started
+  
   console.log("Server listening on: http://localhost:" + PORT);
 });
