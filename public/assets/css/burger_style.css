@@ -1,0 +1,62 @@
+.container {
+  background-color: gold;
+  
+}
+
+#img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h2 {
+  font-family: "Lemonada", cursive;
+  text-align: center;
+  padding: 20px;
+  font-size: xx-large;
+}
+
+#burger{
+background-color: honeydew;
+color: lightslategray;
+}
+
+.dev_burger {
+  color: black;
+  padding: 5px;
+  margin: 5px;
+  background: #faebd7;
+  font-family: "Red Rose", cursive;
+ 
+}
+
+.devouredBurger {
+  color: black;
+  padding: 5px;
+  margin: 5px;
+  background: #faebd7;
+  font-family: "Red Rose", cursive;
+}
+
+.label {
+  font-weight: bold;
+}
+
+#burger_input {
+  padding: 20px;
+  margin: 5px;
+  width: 400px;
+  /* background-color: wheat; */
+}
+
+#addburger {
+  margin-bottom: 5px;
+  font-family: "Red Rose", cursive;
+  text-align: center;
+}
+
+.burger_note {
+  font-family: "Red Rose", cursive;
+  text-align: center;
+  padding: 20px;
+}
